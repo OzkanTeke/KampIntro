@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Metodlar
 {
-    class Urun
+    class Urun // ürün için değişik türdeki özelliklerini tek bir yerde tutabileceğimiz class tanımlama
     {
         public int Id { get; set; }
         public string Adi { get; set; }

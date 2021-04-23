@@ -9,7 +9,7 @@ namespace ClassIntro
             string adi = "Özkan";
             int yas = 27;
 
-            Kurs kurs1 = new Kurs();
+            Kurs kurs1 = new Kurs(); // cisimlerin özelliklerinin atanması
             kurs1.KursAdi = "C#";
             kurs1.Egitmen = "Engin Demiroğ";
             kurs1.IzlenmeOrani = 68;
@@ -31,18 +31,16 @@ namespace ClassIntro
 
             //Console.WriteLine(kurs1.KursAdi + " : " + kurs1.Egitmen);
 
-            Kurs[] kurslar = new Kurs[] {kurs1, kurs2, kurs3, kurs4 };
+            Kurs[] kurslar = new Kurs[] { kurs1, kurs2, kurs3, kurs4 }; // clasların string olarak atanması
 
             foreach (Kurs kurs in kurslar)
             {
                 Console.WriteLine(kurs.KursAdi + " : " + kurs.Egitmen);
             }
-
-            //Console.WriteLine("Hello World!");
         }
     }
 
-    class Kurs
+    class Kurs // class aynı cisme ait değişik türdeki verilerin tek bir şeklide yeni bir veri tipi gibi belirtilmesi
     {
         public string KursAdi { get; set; }
         public string Egitmen { get; set; }

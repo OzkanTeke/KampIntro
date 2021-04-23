@@ -6,7 +6,7 @@ namespace Matematik
 {
     class DortIslem
     {
-        public void Topla(int sayi1, int sayi2)
+        public void Topla(int sayi1, int sayi2) // Topla'yı fonksiyon gibi DortIslem class'ında tanımlama
         {
             int toplam = sayi1 + sayi2;
             Console.WriteLine("Sonuç : " + toplam);

@@ -6,7 +6,7 @@ namespace UrunClassExample
     {
         static void Main(string[] args)
         {
-            Urun urun1 = new Urun();
+            Urun urun1 = new Urun();        // ürünlerin özelliklerini tanımlama
             urun1.UrunAdi = "Hoparlör";
             urun1.UrunMarkasi = "Pioneer";
             urun1.UrunFiyati = 203.48;
@@ -30,9 +30,9 @@ namespace UrunClassExample
             urun4.UrunFiyati = 56.50;
             urun4.IndirimOrani = 14;
 
-            Urun[] urunler = new Urun[] { urun1, urun2, urun3, urun4 };
+            Urun[] urunler = new Urun[] { urun1, urun2, urun3, urun4 };  // aynı class'taki ürünleri tek bir Urun string'i olarak atama
 
-            for (int x = 0; x < urunler.Length; x++)
+            for (int x = 0; x < urunler.Length; x++) // ürünleri gösterme
             {
                 Console.WriteLine(urunler[x].UrunAdi + " - " + urunler[x].UrunMarkasi + " - " + urunler[x].UrunFiyati + "TL - %" + urunler[x].IndirimOrani + " indirim!");
             }
@@ -56,7 +56,7 @@ namespace UrunClassExample
         }
     }
 
-    class Urun
+    class Urun // class tanımlama
     {
         public string UrunAdi { get; set; }
         public string UrunMarkasi { get; set; }
